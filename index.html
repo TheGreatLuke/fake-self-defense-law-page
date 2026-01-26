@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennessee Self-Defense Law Guide | Stand Your Ground & Castle Doctrine</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; line-height: 1.7; color: #2c3e50; background: #f5f7fa; }
+        header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: #fff; padding: 3rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        h1 { font-size: 2.3rem; margin-bottom: 0.5rem; font-weight: 600; }
+        .subtitle { font-size: 1.1rem; opacity: 0.9; font-weight: 300; }
+        .breadcrumb { background: #fff; padding: 1rem 0; border-bottom: 1px solid #e1e8ed; font-size: 0.9rem; }
+        .breadcrumb a { color: #3498db; text-decoration: none; cursor: pointer; }
+        .breadcrumb span { color: #95a5a6; margin: 0 0.5rem; }
+        .content { background: #fff; margin: 2rem auto; padding: 3rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 4px; }
+        .last-updated { color: #7f8c8d; font-size: 0.85rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #ecf0f1; }
+        h2 { color: #1e3c72; margin: 2.5rem 0 1rem 0; font-size: 1.8rem; font-weight: 600; }
+        h3 { color: #2c3e50; margin: 1.8rem 0 0.8rem 0; font-size: 1.3rem; font-weight: 600; }
+        p { margin-bottom: 1.2rem; text-align: left; }
+        .statute-box { background: #f8f9fa; border-left: 4px solid #3498db; padding: 1.5rem; margin: 1.5rem 0; border-radius: 3px; font-family: 'Courier New', monospace; font-size: 0.95rem; }
+        .statute-ref { font-weight: 600; color: #2c3e50; margin-bottom: 0.5rem; }
+        .key-point { background: #e8f4f8; border-left: 4px solid #16a085; padding: 1.2rem; margin: 1.5rem 0; border-radius: 3px; }
+        .key-point h3 { margin-top: 0; color: #16a085; font-size: 1.1rem; }
+        ul { margin: 1rem 0 1.5rem 2rem; }
+        li { margin-bottom: 0.7rem; }
+        .toc { background: #f8f9fa; padding: 1.5rem; border-radius: 4px; margin: 2rem 0; }
+        .toc h3 { margin-top: 0; font-size: 1.1rem; }
+        .toc ul { margin-left: 1.5rem; }
+        .toc a { color: #3498db; text-decoration: none; cursor: pointer; }
+        .toc a:hover { text-decoration: underline; }
+        footer { background: #2c3e50; color: #ecf0f1; padding: 3rem 0; margin-top: 4rem; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        .footer-section h4 { margin-bottom: 1rem; font-size: 1.1rem; }
+        .footer-section a { color: #95a5a6; text-decoration: none; display: block; margin-bottom: 0.5rem; font-size: 0.9rem; cursor: pointer; }
+        .footer-section a:hover { color: #3498db; }
+        .disclaimer-footer { border-top: 1px solid #34495e; padding-top: 2rem; font-size: 0.85rem; color: #95a5a6; line-height: 1.6; }
+        .disclaimer-link { color: #7f8c8d; font-size: 0.8rem; text-decoration: underline; cursor: pointer; margin-top: 2rem; display: inline-block; }
+        .disclaimer-link:hover { color: #95a5a6; }
+        #disclaimerModal, #maintenanceModal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 2.5rem; max-width: 700px; max-height: 80vh; overflow-y: auto; box-shadow: 0 10px 40px rgba(0,0,0,0.3); z-index: 1001; border-radius: 8px; }
+        #disclaimerModal h3 { margin-top: 0; color: #e74c3c; }
+        #disclaimerModal p, #maintenanceModal p { font-size: 0.9rem; margin-bottom: 1rem; }
+        .close-disclaimer, .maintenance-btn { background: #3498db; color: #fff; border: none; padding: 0.7rem 2rem; border-radius: 4px; cursor: pointer; margin-top: 1rem; margin-right: 0.5rem; }
+        #authPrompt { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 2rem; box-shadow: 0 10px 40px rgba(0,0,0,0.4); z-index: 1000; border-radius: 8px; border: 2px solid #1e3c72; }
+        #authPrompt h3 { margin-top: 0; color: #1e3c72; }
+        #authPrompt input { padding: 0.7rem; font-size: 1rem; border: 2px solid #bdc3c7; border-radius: 4px; margin-right: 0.5rem; width: 200px; }
+        #authPrompt button { padding: 0.7rem 1.5rem; background: #1e3c72; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; }
+        #authPrompt button:hover { background: #2a5298; }
+        #overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 999; }
+        .error-msg { color: #e74c3c; font-size: 0.85rem; margin-top: 0.5rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tennessee Self-Defense Law</h1>
+            <p class="subtitle">Understanding Stand Your Ground, Castle Doctrine, and Use of Force</p>
+        </div>
+    </header>
+    
+    <div class="breadcrumb">
+        <div class="container">
+            <a onclick="showConstruction('Home')">Home</a> <span>›</span> 
+            <a onclick="showConstruction('Tennessee Law')">Tennessee Law</a> <span>›</span> 
+            Self-Defense & Use of Force
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <div class="last-updated">Last Updated: January 15, 2026 | Reviewed by Tennessee Legal Staff</div>
+            
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#overview">Overview of Tennessee Self-Defense Law</a></li>
+                    <li><a href="#stand-your-ground">Stand Your Ground Provisions</a></li>
+                    <li><a href="#castle-doctrine">Castle Doctrine</a></li>
+                    <li><a href="#reasonable-force">What Constitutes Reasonable Force</a></li>
+                    <li><a href="#immunity">Civil and Criminal Immunity</a></li>
+                    <li><a href="#limitations">Limitations and Exceptions</a></li>
+                </ul>
+            </div>
+            
+            <h2 id="overview">Overview of Tennessee Self-Defense Law</h2>
+            <p>Tennessee law provides robust protections for individuals who use force to defend themselves, others, or their property. The state has codified both "Stand Your Ground" and "Castle Doctrine" principles, which eliminate the duty to retreat before using force in certain circumstances.</p>
+            <p>Tennessee's self-defense laws are primarily found in Tennessee Code Annotated (TCA) Title 39, Chapter 11, Part 6. These statutes establish when the use of force, including deadly force, is legally justified.</p>
+            
+            <div class="statute-box">
+                <div class="statute-ref">TCA § 39-11-611 - Self-Defense</div>
+                A person is justified in threatening or using force against another person when and to the degree the person reasonably believes the force is immediately necessary to protect against the other's use or attempted use of unlawful force.
+            </div>
+            
+            <h2 id="stand-your-ground">Stand Your Ground Provisions</h2>
+            <p>Tennessee enacted its Stand Your Ground law in 2007, eliminating the common law duty to retreat before using defensive force. This means that if you are in a place where you have a legal right to be, you are not required to attempt to flee before defending yourself.</p>
+            
+            <div class="key-point">
+                <h3>Key Requirements for Stand Your Ground</h3>
+                <ul>
+                    <li>You must be in a place where you have a legal right to be</li>
+                    <li>You must not be engaged in illegal activity</li>
+                    <li>You must have a reasonable belief that force is necessary</li>
+                    <li>The threat must be immediate and unlawful</li>
+                </ul>
+            </div>
+            
+            <h3>Application in Public Spaces</h3>
+            <p>The Stand Your Ground law applies in any location where you have a lawful right to be present, including public streets, parks, restaurants, stores, and your workplace. You do not have a duty to retreat from these locations if faced with a threat of unlawful force.</p>
+            
+            <div class="disclaimer-link" onclick="showDisclaimer()">Legal Disclaimer & Important Notices</div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tennessee Law Resources</h4>
+                    <a onclick="showConstruction('Tennessee Code')">Tennessee Code Annotated</a>
+                    <a onclick="showConstruction('Case Law')">Court Decisions & Case Law</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Related Topics</h4>
+                    <a onclick="showConstruction('Gun Laws')">Gun Laws in Tennessee</a>
+                    <a onclick="showConstruction('CCW')">Concealed Carry Permits</a>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <a onclick="showConstruction('Contact')">Contact Us</a>
+                    <a onclick="showConstruction('Privacy')">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="disclaimer-footer">
+                <p><strong>Important:</strong> This website provides general information about Tennessee law for educational purposes only. For specific legal advice, consult with a qualified Tennessee attorney.</p>
+                <p style="margin-top: 1rem;">© 2026 Tennessee Legal Resources. All information provided for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="overlay"></div>
+    <div id="disclaimerModal">
+        <h3>⚠️ Legal Disclaimer</h3>
+        <p><strong>NOT LEGAL ADVICE:</strong> This content is for educational purposes only.</p>
+        <p><strong>CONSULT AN ATTORNEY:</strong> For specific legal issues, consult a licensed attorney.</p>
+        <button class="close-disclaimer" onclick="closeDisclaimer()">I Understand</button>
+    </div>
+    
+    <div id="maintenanceModal">
+        <h3>🔧 Scheduled Maintenance</h3>
+        <p>This site is currently under scheduled maintenance.</p>
+        <p><strong>Available Hours:</strong> Monday-Friday, 7:00 AM - 4:00 PM CST</p>
+        <p>Recommended resource: <a href="https://law.justia.com/tennessee/" target="_blank" style="color: #3498db;">Justia Tennessee Law</a></p>
+        <button class="maintenance-btn" onclick="closeMaintenance()">Close</button>
+        <button class="maintenance-btn" onclick="showAdminAuth()">Site Admin</button>
+    </div>
+    
+    <div id="authPrompt">
+        <h3>Access Verification</h3>
+        <div id="authError" class="error-msg" style="display:none;"></div>
+        <input type="password" id="authInput" placeholder="Enter code">
+        <button onclick="verifyAccess()">Submit</button>
+    </div>
+    
+<script>
+var config={
+    userPass:'TennesseeStatute2026',
+    adminPass:'TNLegalAdmin2026',
+    resources:[
+        {name:'Doge Researcher',url:'https://iswaterpoisonous.griffithfamilyhealth.com'},
+        {name:'Solace Studies',url:'https://s0lace.fly.dev/games'},
+        {name:'Space Explorer',url:'https://study.polyhedramath.com'},
+        {name:'Utopian Society',url:'https://learnjava.systems-programmer.co.uk'}
+    ],
+    sessionKey:'userSessionActive',
+    adminSessionKey:'adminSessionActive',
+    attemptKey:'accessAttempts',
+    maxAttempts:5,
+    startHour:7,
+    endHour:16,
+    timezone:-6
+};
+
+var safeMode=false;
+var keyState={};
+
+document.addEventListener('contextmenu',function(e){
+    if(!safeMode){
+        e.preventDefault();
+        window.location.href='https://law.justia.com/tennessee/';
+    }
+});
+
+document.addEventListener('keydown',function(e){
+    keyState[e.key]=true;
+    
+    if(keyState.Control&&keyState.Shift&&e.key==='A'){
+        e.preventDefault();
+        safeMode=true;
+        console.log('Safe mode enabled');
+    }
+    
+    if(keyState.Control&&keyState.Shift&&e.key==='D'){
+        e.preventDefault();
+        if(isWithinOperatingHours()){
+            showAuthPrompt();
+        }else{
+            showMaintenanceModal();
+        }
+    }
+});
+
+document.addEventListener('keyup',function(e){
+    keyState[e.key]=false;
+});
+
+function isWithinOperatingHours(){
+    var now=new Date();
+    var utc=now.getTime()+(now.getTimezoneOffset()*60000);
+    var localTime=new Date(utc+(3600000*config.timezone));
+    var hour=localTime.getHours();
+    var day=localTime.getDay();
+    return(day>=1&&day<=5)&&(hour>=config.startHour&&hour<config.endHour);
+}
+
+function showConstruction(section){
+    alert(section+' - Section Under Development\n\nThis section is currently being updated. Please check back soon for more information.');
+}
+
+function showDisclaimer(){
+    document.getElementById('overlay').style.display='block';
+    document.getElementById('disclaimerModal').style.display='block';
+}
+
+function closeDisclaimer(){
+    document.getElementById('overlay').style.display='none';
+    document.getElementById('disclaimerModal').style.display='none';
+}
+
+function showMaintenanceModal(){
+    document.getElementById('overlay').style.display='block';
+    document.getElementById('maintenanceModal').style.display='block';
+}
+
+function closeMaintenance(){
+    document.getElementById('overlay').style.display='none';
+    document.getElementById('maintenanceModal').style.display='none';
+}
+
+function showAdminAuth(){
+    document.getElementById('maintenanceModal').style.display='none';
+    document.getElementById('authPrompt').style.display='block';
+    document.getElementById('authInput').focus();
+}
+
+function showAuthPrompt(){
+    document.getElementById('overlay').style.display='block';
+    document.getElementById('authPrompt').style.display='block';
+    document.getElementById('authInput').focus();
+}
+
+function verifyAccess(){
+    var input=document.getElementById('authInput').value;
+    var errorDiv=document.getElementById('authError');
+    var attempts=parseInt(localStorage.getItem(config.attemptKey)||'0');
+    
+    if(attempts>=config.maxAttempts){
+        errorDiv.textContent='Access temporarily restricted. Please try again later.';
+        errorDiv.style.display='block';
+        return;
+    }
+    
+    if(input===config.userPass||input===config.adminPass){
+        var sessionKey=input===config.userPass?config.sessionKey:config.adminSessionKey;
+        localStorage.setItem(sessionKey,'true');
+        localStorage.removeItem(config.attemptKey);
+        loadResourcePortal();
+    }else{
+        attempts++;
+        localStorage.setItem(config.attemptKey,attempts.toString());
+        errorDiv.textContent='Incorrect access code. '+(config.maxAttempts-attempts)+' attempts remaining.';
+        errorDiv.style.display='block';
+        document.getElementById('authInput').value='';
+    }
+}
+
+function loadResourcePortal(){
+    document.getElementById('overlay').style.display='none';
+    document.getElementById('authPrompt').style.display='none';
+    
+    var buttonsHTML='';
+    config.resources.forEach(function(resource,index){
+        buttonsHTML+='<button onclick="openResource('+index+')" style="padding:1rem;background:#3498db;color:white;border:none;border-radius:6px;font-size:1rem;cursor:pointer;margin-bottom:0.8rem;width:100%;transition:background 0.3s;" onmouseover="this.style.background=\'#2980b9\'" onmouseout="this.style.background=\'#3498db\'">'+resource.name+'</button>';
+    });
+    
+    document.body.innerHTML='<div style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:#f5f7fa;padding:20px;"><div style="background:white;padding:3rem;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.1);max-width:500px;width:100%;text-align:center;"><h2 style="color:#1e3c72;margin-bottom:1rem;">Resource Portal</h2><p style="color:#7f8c8d;margin-bottom:2rem;">Select a research portal to continue:</p><div style="display:flex;flex-direction:column;">'+buttonsHTML+'</div><button onclick="location.reload()" style="margin-top:2rem;padding:0.7rem 1.5rem;background:#95a5a6;color:white;border:none;border-radius:6px;cursor:pointer;transition:background 0.3s;" onmouseover="this.style.background=\'#7f8c8d\'" onmouseout="this.style.background=\'#95a5a6\'">← Return to Main Site</button></div></div>';
+}
+
+function openResource(index){
+    var resourceUrl=config.resources[index].url;
+    var newWindow=window.open('','_blank');
+    
+    if(newWindow){
+        newWindow.document.write('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Research Portal</title><style>*{margin:0;padding:0;box-sizing:border-box}body,html{height:100%;overflow:hidden;font-family:Arial,sans-serif}iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}</style></head><body><iframe src="'+resourceUrl+'" allow="fullscreen"></iframe></body></html>');
+        newWindow.document.close();
+    }else{
+        alert('Pop-up blocked. Please allow pop-ups for this site and try again.');
+    }
+}
+
+// Check for active sessions on page load
+if(localStorage.getItem(config.sessionKey)==='true'||localStorage.getItem(config.adminSessionKey)==='true'){
+    if(isWithinOperatingHours()||localStorage.getItem(config.adminSessionKey)==='true'){
+        loadResourcePortal();
+    }else{
+        showMaintenanceModal();
+    }
+}
+
+// Force maintenance mode if outside hours and not admin
+(function(){
+    if(!isWithinOperatingHours()&&localStorage.getItem(config.adminSessionKey)!=='true'){
+        // Hide main content
+        document.querySelector('.content').style.display='none';
+        document.querySelector('header').style.display='none';
+        document.querySelector('.breadcrumb').style.display='none';
+        document.querySelector('footer').style.display='none';
+        
+        // Show maintenance immediately
+        showMaintenanceModal();
+        
+        // Prevent closing maintenance modal
+        var originalClose=closeMaintenance;
+        closeMaintenance=function(){
+            // Do nothing - can't close during off-hours
+        };
+        
+        // Redirect to Justia after 25 seconds if still not logged in
+        setTimeout(function(){
+            if(localStorage.getItem(config.adminSessionKey)!=='true'){
+                window.location.href='https://law.justia.com/tennessee/';
+            }
+        }, 25000);
+    }
+})();
+
+document.getElementById('authInput').addEventListener('keypress',function(e){
+    if(e.key==='Enter'){
+        verifyAccess();
+    }
+});
+
+document.getElementById('overlay').addEventListener('click',function(e){
+    if(e.target===this){
+        closeDisclaimer();
+        closeMaintenance();
+        this.style.display='none';
+        document.getElementById('authPrompt').style.display='none';
+    }
+});
+</script>
+</body>
+</html>
